@@ -50,7 +50,7 @@ function _toConsumableArray(a) {
     pause.addEventListener("click", function () {
       playing
         ? ((playing = !1), clearInterval(interval), (this.innerText = "resume"))
-        : ((playing = !0), (interval = timer()), (this.innerText = "pause")),
+        : ((playing = !0), (interval =timer()), (this.innerText = "pause")),
         []
           .concat(_toConsumableArray(document.getElementsByTagName("button")))
           .forEach(function (a) {
